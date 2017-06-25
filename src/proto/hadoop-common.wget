@@ -1,0 +1,15 @@
+export PREFIX=https://raw.githubusercontent.com/apache/hadoop/f67237cbe7bc48a1b9088e990800b37529f1db2a/hadoop-common-project/hadoop-common/src/main/proto
+
+wget -c $PREFIX/GenericRefreshProtocol.proto
+wget -c $PREFIX/GetUserMappingsProtocol.proto
+wget -c $PREFIX/HAServiceProtocol.proto
+wget -c $PREFIX/IpcConnectionContext.proto
+wget -c $PREFIX/ProtobufRpcEngine.proto
+wget -c $PREFIX/ProtocolInfo.proto
+wget -c $PREFIX/RefreshAuthorizationPolicyProtocol.proto
+wget -c $PREFIX/RefreshCallQueueProtocol.proto
+wget -c $PREFIX/RefreshUserMappingsProtocol.proto
+wget -c $PREFIX/RpcHeader.proto
+wget -c $PREFIX/Security.proto
+wget -c $PREFIX/TraceAdmin.proto
+wget -c $PREFIX/ZKFCProtocol.proto

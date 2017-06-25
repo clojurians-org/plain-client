@@ -1,0 +1,14 @@
+export PREFIX=https://raw.githubusercontent.com/apache/hadoop/f67237cbe7bc48a1b9088e990800b37529f1db2a/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto
+
+wget -c $PREFIX/application_history_client.proto
+wget -c $PREFIX/applicationclient_protocol.proto
+wget -c $PREFIX/applicationmaster_protocol.proto
+wget -c $PREFIX/client_SCM_protocol.proto
+wget -c $PREFIX/containermanagement_protocol.proto
+wget -c $PREFIX/yarn_protos.proto
+wget -c $PREFIX/yarn_service_protos.proto
+mkdir -p server
+wget -O server/SCM_Admin_protocol.proto -c $PREFIX/server/SCM_Admin_protocol.proto
+wget -O server/application_history_server.proto -c $PREFIX/server/application_history_server.proto
+wget -O server/resourcemanager_administration_protocol.proto -c $PREFIX/server/resourcemanager_administration_protocol.proto
+wget -O server/yarn_server_resourcemanager_service_protos.proto -c $PREFIX/server/yarn_server_resourcemanager_service_protos.proto
